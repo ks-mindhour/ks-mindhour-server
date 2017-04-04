@@ -46,9 +46,9 @@ app.post('/', function(req, res) {
     var mail_id = req.body.email;
     var password = req.body.password;
 */
-    var res = new Resource( req.body );
-    res.save(function (err) {
-      res.json(200, res);
+    var res1 = new Resource( req.body );
+    res1.save(function (err) {
+      res.json(200, res1);
     });
 
     //res.send(f_name + ' ' + l_name + ' ' + mail_id);
