@@ -17,20 +17,21 @@ app.use(morgan('dev'));
 
 var Schema = mongoose.Schema;
 
-//ObjectId = Schema.ObjectId;
+ObjectId = Schema.ObjectId;
 var customer = new Schema({
+	id : ObjectId;
     firstname    		: String,
     lastname     		: String,
     contactnumber       : String,
     password	        : String
 });
 
-Todo = mongoose.model('customer', Schema);	//this line contains error
+//Todo = mongoose.model('customer', Schema);	//this line contains error
 
-/*mongoose.connect(process.env.MONGOLAB_URI, function (error) {
+mongoose.connect(process.env.MONGOLAB_URI, function (error) {
     if (error) console.error(error);
     else console.log('mongo connected');
-});*/
+});
 
 
 app.post('/', function(req, res) {
