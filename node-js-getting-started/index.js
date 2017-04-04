@@ -2,7 +2,9 @@ var express = require('express');
 var morgan = require('morgan');	//middleware
 
 var hostname = 'localhost';
-var portnumber = 3000;
+
+// process.env.PORT lets the port be set by Heroku
+var portnumber = process.env.PORT || 8080;;
 
 var app = express();
 
