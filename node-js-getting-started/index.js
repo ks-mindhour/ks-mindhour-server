@@ -30,7 +30,11 @@ Resource = mongoose.model('Resource', new Schema());
 //Todo = mongoose.model('customer', Schema);	//this line contains error
 
 mongoose.connect(process.env.MONGOLAB_URI, function (error) {
-    if (error) console.error(error);
+    if (error) 
+    	{
+    		console.error(error);
+    		console.log("fuck yaar");
+    	}
     else console.log('mongo connected');
 });
 
