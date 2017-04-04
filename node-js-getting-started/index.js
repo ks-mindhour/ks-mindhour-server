@@ -29,7 +29,7 @@ var customer = new Schema({
 Resource = mongoose.model('Resource', new Schema());
 //Todo = mongoose.model('customer', Schema);	//this line contains error
 
-mongoose.connect(process.env.MONGOLAB_URI, function (error) {
+mongoose.connect(process.env.MONGODB_URI, function (error) {
     if (error) 
     	{
     		console.error(error);
