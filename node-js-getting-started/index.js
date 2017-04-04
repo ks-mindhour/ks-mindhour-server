@@ -55,6 +55,7 @@ app.post('/', function(req, res) {
 */
     var res1 = new Resource( req.body );
     res1.save(function (err) {
+        console.log('checking');
         console.log(res1.f_name);
      // res.json(200, res1);
     });
