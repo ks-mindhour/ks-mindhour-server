@@ -1,5 +1,6 @@
 var express = require('express');
 var morgan = require('morgan');	//middleware
+var mongoose = require('mongoose');
 
 //var hostname = 'localhost';
 
@@ -13,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
 app.use(morgan('dev'));
 
-var mongoose = require('mongoose');
+/*
 var Schema = mongoose.Schema;
 //ObjectId = Schema.ObjectId;
 var customer = new Schema({
