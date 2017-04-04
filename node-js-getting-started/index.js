@@ -55,7 +55,8 @@ app.post('/', function(req, res) {
 */
     var res1 = new Resource( req.body );
     res1.save(function (err) {
-      res.json(200, res1);
+        console.log(res1.f_name);
+     // res.json(200, res1);
     });
 
     //res.send(f_name + ' ' + l_name + ' ' + mail_id);
