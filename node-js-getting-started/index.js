@@ -24,8 +24,8 @@ var customer = new Schema({
     contactnumber       : String,
     password	        : String
 });
-/*
-Cust = mongoose.model('Cust', Schema);
+
+Todo = mongoose.model('Todo', Schema);
 
 /*mongoose.connect(process.env.MONGOLAB_URI, function (error) {
     if (error) console.error(error);
