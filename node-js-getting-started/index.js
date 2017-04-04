@@ -14,8 +14,9 @@ app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
 app.use(morgan('dev'));
 
-/*
+
 var Schema = mongoose.Schema;
+/*
 //ObjectId = Schema.ObjectId;
 var customer = new Schema({
     firstname    		: String,
