@@ -25,10 +25,10 @@ var customer = new Schema({
 
 Cust = mongoose.model('Cust', Schema);
 
-mongoose.connect(process.env.MONGOLAB_URI, function (error) {
+/*mongoose.connect(process.env.MONGOLAB_URI, function (error) {
     if (error) console.error(error);
     else console.log('mongo connected');
-});
+});*/
 
 
 app.post('/', function(req, res) {
