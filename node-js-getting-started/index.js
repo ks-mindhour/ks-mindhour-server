@@ -40,12 +40,18 @@ mongoose.connect(process.env.MONGODB_URI, function (error) {
 
 
 app.post('/', function(req, res) {
+	/*
     var f_name = req.body.first_name;
     var l_name = req.body.last_name;
     var mail_id = req.body.email;
     var password = req.body.password;
+*/
+    var res = new Resource( req.body );
+    res.save(function (err) {
+      res.json(200, todo);
+    });
 
-    res.send(f_name + ' ' + l_name + ' ' + mail_id);
+    //res.send(f_name + ' ' + l_name + ' ' + mail_id);
 });
 
 
