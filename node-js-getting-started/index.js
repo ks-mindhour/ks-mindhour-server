@@ -17,9 +17,9 @@ app.use(morgan('dev'));
 
 var Schema = mongoose.Schema;
 
-ObjectId = Schema.ObjectId;
+//ObjectId = Schema.ObjectId;
 var customer = new Schema({
-	id : ObjectId;
+//	id : ObjectId;
     firstname    		: String,
     lastname     		: String,
     contactnumber       : String,
