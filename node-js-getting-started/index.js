@@ -48,7 +48,7 @@ app.post('/', function(req, res) {
 */
     var res = new Resource( req.body );
     res.save(function (err) {
-      res.json(200, todo);
+      res.json(200, res);
     });
 
     //res.send(f_name + ' ' + l_name + ' ' + mail_id);
