@@ -16,7 +16,7 @@ app.use(morgan('dev'));
 
 
 var Schema = mongoose.Schema;
-/*
+
 //ObjectId = Schema.ObjectId;
 var customer = new Schema({
     firstname    		: String,
@@ -24,7 +24,7 @@ var customer = new Schema({
     contactnumber       : String,
     password	        : String
 });
-
+/*
 Cust = mongoose.model('Cust', Schema);
 
 /*mongoose.connect(process.env.MONGOLAB_URI, function (error) {
