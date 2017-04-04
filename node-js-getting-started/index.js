@@ -26,6 +26,7 @@ var customer = new Schema({
     password	        : String
 });
 
+module.exports = mongoose.model('Resource', new Schema());
 //Todo = mongoose.model('customer', Schema);	//this line contains error
 
 mongoose.connect(process.env.MONGOLAB_URI, function (error) {
