@@ -39,6 +39,13 @@ mongoose.connect(process.env.MONGODB_URI, function (error) {
 });
 
 
+
+app.get('/',function(req, res){
+	Resource.find( function ( err, todos ){
+      res.json(200, todos);
+    });
+});
+
 app.post('/', function(req, res) {
 	/*
     var f_name = req.body.first_name;
